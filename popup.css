@@ -1,0 +1,141 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(180, 241, 243);
+    background: linear-gradient(to bottom right, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	  background-size: 300% 300%;
+    animation: gradient 5s ease infinite;
+    font-family: "Lucida Console", "Monaco", monospace; font-size: 20px; font-style: normal; font-variant: small-caps; font-weight: 500; line-height: 20px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    user-select: none;
+    white-space: nowrap;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.colourora_main_controls {
+    padding:10px 20px;
+
+}
+h1 {
+  /* background-color: rgb(170, 169, 245);
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(18, 24, 24));
+  border-radius: 6px;
+  width: 250px;
+  padding: 5px;
+  margin: 5px; */
+  text-align: center;
+  font-size: 8px;
+  margin-bottom:0px;
+}
+h2{
+  font-family: "Lucida Console", "Monaco", monospace; font-size: 20px; font-style: normal; font-variant: small-caps; font-weight: 500; line-height: 20px;
+  background-color: rgb(170, 169, 245);
+  background-image: linear-gradient(to bottom right, rgb(170, 169, 245), rgb(128, 243, 247));
+  border-radius: 6px;
+  width: 250px;
+  padding: 5px;
+  margin: 5px;
+}
+h3{
+  font-family: "Lucida Console", "Monaco", monospace; font-size: 20px; font-style: normal; font-variant: small-caps; font-weight: 500; line-height: 20px;
+  background-color: rgb(170, 169, 245);
+  background-image: linear-gradient(to bottom right, rgb(170, 169, 245), rgb(128, 243, 247));
+  border-radius: 6px;
+  width: 250px;
+  padding: 5px;
+  margin: 5px;
+}
+label[for] {
+    cursor:pointer;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) ,
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked)
+{
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label,
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label {
+    position: relative;
+    padding-left: 19px;
+    cursor: pointer;
+    display: inline-block;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 7.8px;
+    top: 1.5px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ddd;
+    border-radius: 30%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after ,
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: rgb(2, 39, 250);
+    position: absolute;
+    top: 3.888px;
+    left: 10px;
+    border-radius: 30%;
+    transition: all 0.2s ease;
+}
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after {
+    border-radius: 0%;
+}
+[type="radio"]:not(:checked) + label:after,
+[type="checkbox"]:not(:checked) + label:after
+{
+    opacity: 0;
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after,
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+.colourora_save {
+    border: 2px solid rgb(86, 59, 245);
+    font-family: "Lucida Console", "Monaco", monospace; font-size: 20px; font-style: normal; font-variant: small-caps; font-weight: 500; line-height: 20px;
+    padding:5px;
+    border-radius: 6px;
+    cursor:pointer;
+    background: rgb(178, 248, 250);
+    transition: background 0.4s ease-in-out 0s;
+}
+.CORA-saving {
+    background: rgb(79, 241, 73);
+    font-family: "Lucida Console", "Monaco", monospace; font-size: 20px; font-style: normal; font-variant: small-caps; font-weight: 500; line-height: 20px;
+    border-radius: 6px;
+    cursor:initial;
+}
+.colourora_text_center {
+    text-align: center;
+    width: 100%;
+}

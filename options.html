@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Test Extension Options</title>
+  <style>
+    body { padding: 10px; }
+  </style>
+</head>
+
+<body>
+  <h2>Default settings:</h2>
+  Color deficiency:
+  <select id="type">
+   <option value="normal">Normal</option>
+   <option value="protanopia">Protanopia (Red)</option>
+   <option value="deuteranopia">Deuteranopia (Green)</option>
+   <option value="tritanopia">Tritanopia (Blue)</option>
+  </select><br>
+
+   Operating mode:
+  <select id="mode">
+   <option value="simulate">Simulate</option>
+   <option value="rectify">Rectify</option>
+  </select><br>
+
+  <!--
+   Color deficiency strength
+   <input id="CDSStrength" min="0" max="100" type="range"><br>
+   Color correction strength
+   <input id="CCSStrength" min="0" max="100" type="range"><br>
+  
+
+
+   <label>
+    <input id="only_image" type="checkbox">
+    Image only.
+  </label>
+  -->
+
+  <div id="status"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>

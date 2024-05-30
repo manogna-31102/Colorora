@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>COLOURORA</title>
+
+	<meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="popup.css">
+
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="colourora_main_controls">
+        <h1>
+          <span style="color:#ffffff;;font-weight:bold;font-size:40px;font-family: 'Times New Roman', serif;text-shadow: 2px 2px 4px #000000; ">c</span >
+          <span style="color:#ffffff;font-weight:bold;font-size:40px;font-family: 'Times New Roman', serif;text-shadow: 2px 2px 4px #000000;">o</span>
+          <span style="color:#ffffff;font-weight:bold;font-size:40px;font-family: 'Times New Roman', serif;text-shadow: 2px 2px 4px #000000;">l</span>
+          <span style="color:#ffffff;font-weight:bold;font-size:40px;font-family: 'Times New Roman', serif;text-shadow: 2px 2px 4px #000000;">o</span>
+          <span style="color:#ffffff;font-weight:bold;font-size:40px;font-family: 'Times New Roman', serif;text-shadow: 2px 2px 4px #000000;">u</span>
+          <span style="color:#ffffff;font-weight:bold;font-size:40px;font-family: 'Times New Roman', serif;text-shadow: 2px 2px 4px #000000;">r</span>
+          <span style="color:#ffffff;font-weight:bold;font-size:40px;font-family: 'Times New Roman', serif;text-shadow: 2px 2px 4px #000000;">o</span>
+          <span style="color:#ffffff;font-weight:bold;font-size:40px;font-family: 'Times New Roman', serif;text-shadow: 2px 2px 4px #000000;">r</span>
+          <span style="color:#ffffff;font-weight:bold;font-size:40px;font-family: 'Times New Roman', serif;text-shadow: 2px 2px 4px #000000;">a</span>
+        </h1>
+      <br>
+      <h2>
+      <input id="CORA-normal" name="type" value="normal" type="radio">
+      <label for="CORA-normal">&nbsp;Normal</label>
+      <br>
+      <input id="CORA-protanopia" name="type" value="protanopia" type="radio">
+      <label for="CORA-protanopia">&nbsp;Protanopia (Red)</label>
+      <br>
+      <input id="CORA-deuteranopia" name="type" value="deuteranopia" type="radio">
+      <label for="CORA-deuteranopia">&nbsp;Deuteranopia (Green)</label>
+      <br>
+      <input id="CORA-tritanopia" name="type" value="tritanopia" type="radio">
+      <label for="CORA-tritanopia">&nbsp;Tritanopia (Blue)</label>
+      <br>
+      </h2>
+      <h3>
+      <input id="CORA-simulate" name="mode" value="simulate" type="radio">
+      <label for="CORA-simulate">&nbsp;Simulate</label>
+      <br>
+      <input id="CORA-rectify" name="mode" value="rectify" type="radio">
+      <label for="CORA-rectify">&nbsp;Rectify</label>
+      </h3>
+      <br>
+      <!--
+        <input id="CORA-CDSS" min="0" max="100" type="range">
+      </label>
+      <br>
+      <label>Color correction strength
+        <br>
+        <input id="CORA-CCSS" min="0" max="100" disabled="" type="range">
+      </label><br>
+      <hr>
+      
+      <input id="CORA-imgonly" type="checkbox">
+      <label for="CORA-imgonly">Image Only</label>
+      <hr>
+      -->
+    
+      <div class="colourora_text_center">
+        <button id="CORA-savebutton" title="Use current settings as default" class="colourora_save">Save settings
+        </button>
+      </div>
+
+
+    </div>
+  </body>
+</html>
